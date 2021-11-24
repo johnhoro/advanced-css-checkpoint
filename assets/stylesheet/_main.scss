@@ -1,0 +1,272 @@
+// HEADER
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.header {
+  width: 300px;
+  height: 100vh;
+  background-color: $black;
+  padding-top: 2rem;
+  position: fixed;
+  .profile {
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: white;
+      padding: 0.8rem 0;
+      cursor: pointer;
+      &:hover {
+        color: red;
+      }
+    }
+    .brand {
+      border-radius: 50%;
+      width: 158px;
+      height: 158px;
+      background: radial-gradient(
+        circle at 30% 107%,
+        #fdf497 0%,
+        #fdf497 5%,
+        #fd5949 45%,
+        #d6249f 60%,
+        #285aeb 90%
+      );
+
+      img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+    .social-link ul li {
+      width: 2.5rem;
+      border-radius: 50%;
+      height: 2.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 0.5rem;
+      background-color: $grey;
+      &:hover {
+        background-color: $sky;
+      }
+      a {
+        color: $white;
+        transition-property: all;
+        transition-duration: 0.5s;
+      }
+    }
+  }
+  .nav {
+    padding-top: 1.5rem;
+    ul {
+      li:first-child {
+        a {
+          span {
+            padding-left: 0.5rem;
+          }
+        }
+      }
+    }
+    ul > li {
+      margin-top: 2rem;
+      width: 10rem;
+      &:hover {
+        a {
+          color: $white;
+        }
+        i {
+          color: $sky;
+        }
+      }
+    }
+    a {
+      font-size: 1.1rem;
+      color: $l-grey;
+      font-weight: 200;
+      padding: 1.5rem;
+      margin-top: 1rem;
+      transition-property: all;
+      transition-duration: 1s;
+      transition: all 1s ease-in-out;
+      i:hover {
+        transform: rotate(3turn);
+        color: $sky;
+      }
+      span {
+        padding-left: 1rem;
+      }
+    }
+  }
+}
+
+// HERO SECTION
+.hero {
+  background: url(../media/photos/IMG_20210514_220522_852.jpg);
+  background-size: cover;
+  height: 100vh;
+  background-attachment: fixed;
+  .overlay {
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.3);
+    width: 100%;
+  }
+  .container {
+    max-width: 600px;
+    margin: 18% auto;
+    h1 {
+      font-size: 4rem;
+      font-weight: 600;
+      color: $white;
+      cursor: pointer;
+    }
+    p {
+      font-size: 1.5rem;
+      color: $white;
+    }
+  }
+}
+
+// ABOUT SECTION
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: $dark-blue;
+    padding-bottom: 2rem;
+  }
+  .about-box {
+    padding: 1rem;
+    margin-top: 2rem;
+    border-radius: 12px;
+    box-shadow: 3px 3px 10px rgba(44, 39, 39, 0.1),
+      -3px -3px 10px rgba(44, 39, 39, 0.1);
+    div {
+      width: 45%;
+      h4 {
+        font-size: 1.3rem;
+        font-weight: 500;
+      }
+    }
+    h3 {
+      font-size: 2rem;
+    }
+  }
+}
+
+// CONTACT SECTION
+.contact {
+  h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: $dark-blue;
+    padding-bottom: 2rem;
+  }
+  .contact-box-parent {
+    margin-bottom: 1rem;
+  }
+  .contact-box {
+    margin-right: 2rem;
+  }
+  .contact-col {
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 12px;
+    box-shadow: 3px 3px 10px rgba(44, 39, 39, 0.1),
+      -3px -3px 10px rgba(44, 39, 39, 0.1);
+    .contact-circle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+      background-color: $light;
+      a {
+        color: $sky;
+      }
+    }
+    h4 {
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: $dark-blue;
+    }
+    .email > a {
+      color: $black;
+      &:hover {
+        color: $hover;
+      }
+    }
+    .call > a {
+      color: $black;
+      &:hover {
+        color: $hover;
+      }
+    }
+  }
+}
+
+/* form */
+form {
+  width: 100%;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 12px;
+  box-shadow: 3px 3px 10px rgba(44, 39, 39, 0.1),
+    -3px -3px 10px rgba(44, 39, 39, 0.1);
+  .form-control {
+    padding: 0.8rem;
+    width: 48.5%;
+    border: 1px solid $l-grey;
+  }
+  textarea {
+    width: 100%;
+    padding: 0.8rem;
+    font-family: "Poppins", sans-serif;
+    border: 1px solid $l-grey;
+  }
+  .subject {
+    font-family: "Poppins", sans-serif;
+    padding: 0.8rem;
+    width: 100%;
+    margin: 1rem 0;
+    border: 1px solid $l-grey;
+  }
+  .btn-contact {
+    padding: 0.6rem 1.4rem;
+    border: none;
+    margin-top: 1rem;
+    background-color: $sky;
+    cursor: pointer;
+    &:hover {
+      background-color: $hover;
+    }
+    a {
+      color: $white;
+    }
+  }
+}
+
+.square-top {
+  position: fixed;
+  bottom: 1rem;
+  width: 2.5rem;
+  background-color: $sky;
+  height: 2.5rem;
+  right: 1rem;
+  &:hover {
+    background-color: $hover;
+  }
+}
+.square-top a {
+  color: white;
+  text-align: center;
+}

@@ -1,0 +1,74 @@
+html {
+  font-size: 16px;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+#toggle,
+.bars {
+  display: none;
+}
+.pad-l-20 {
+  padding-left: 15%;
+}
+.margin {
+  margin: 3rem 0 10rem 20%;
+}
+.padding {
+  padding: 1rem 0;
+}
+.pad-l {
+  padding-left: 4rem;
+}
+.pad-r {
+  padding-right: 4rem;
+}
+.pad-top {
+  padding-top: 4rem;
+}
+.pad-bottom {
+  padding-bottom: 4rem;
+}
+.text-center {
+  text-align: center;
+}
+#active a {
+  i {
+    color: $sky;
+  }
+  span {
+    color: $white;
+  }
+}
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: rgb(18, 45, 82);
+  position: relative;
+  margin-bottom: 2.5rem;
+}
+h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #149ddd;
+  bottom: 0;
+  left: 0;
+}

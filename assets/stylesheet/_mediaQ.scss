@@ -1,0 +1,140 @@
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 14px;
+  }
+  .header {
+    position: fixed;
+  }
+  .container {
+    max-width: 992px;
+  }
+  .pad-l-20 {
+    padding-left: 33%;
+  }
+  .overlay > div {
+    padding-left: 18%;
+  }
+  .flex-sm-column {
+    flex-direction: column;
+  }
+  .contact {
+    .contact-box {
+      margin: 0;
+    }
+  }
+
+  // PROJECT
+  .project {
+    h2 {
+      margin-left: 34%;
+    }
+    article {
+      grid-template-columns: repeat(1, 1fr);
+      margin: auto;
+      padding-left: 39%;
+    }
+  }
+}
+
+@media screen and(max-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  // TOGGLE
+
+  #toggle:checked ~ .header {
+    display: inline-block;
+  }
+  .bars {
+    font-size: 2rem;
+    color: black;
+    display: inline-block;
+  }
+  .bars {
+    right: 2rem;
+    color: black;
+  }
+  .brand,
+  .bars {
+    top: 1rem;
+    z-index: 99;
+    position: absolute;
+  }
+  #toggle {
+    display: none;
+  }
+  .header {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    background: $black;
+    padding-top: 16rem;
+    z-index: 9;
+  }
+
+  // ABOUT
+  .container {
+    article {
+      padding: 2rem;
+    }
+  }
+
+  // PROJECT
+  .project {
+    h2 {
+      margin-left: 3rem;
+    }
+    .project-container {
+      width: auto;
+      .slider {
+        height: 180px;
+      }
+      .project-2 {
+        height: 180px;
+      }
+    }
+    article {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      margin: auto;
+      padding: 0;
+    }
+  }
+
+  // CONTACT
+  .flex-sm-column {
+    flex-direction: column;
+  }
+  .contact {
+    .contact-box {
+      margin: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 520px) {
+  html {
+    font-size: 10px;
+  }
+  .container {
+    max-width: 480px;
+    margin: 0 auto;
+  }
+  .contact {
+    .contact-box {
+      margin: 0;
+    }
+    .contact-col {
+      margin-bottom: 2rem;
+    }
+  }
+}
