@@ -908,12 +908,6 @@ form .btn-contact a {
   .project .project-container {
     width: auto;
   }
-  .project .project-container .slider {
-    height: 180px;
-  }
-  .project .project-container .project-2 {
-    height: 180px;
-  }
   .project article {
     display: -ms-grid;
     display: grid;
@@ -946,6 +940,12 @@ form .btn-contact a {
   }
   .contact .contact-col {
     margin-bottom: 2rem;
+  }
+  .project .project-container .slider {
+    height: 180px;
+  }
+  .project .project-container .project-2 {
+    height: 180px;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -95,12 +95,6 @@
     }
     .project-container {
       width: auto;
-      .slider {
-        height: 180px;
-      }
-      .project-2 {
-        height: 180px;
-      }
     }
     article {
       display: grid;
@@ -135,6 +129,16 @@
     }
     .contact-col {
       margin-bottom: 2rem;
+    }
+  }
+  .project {
+    .project-container {
+      .slider {
+        height: 180px;
+      }
+      .project-2 {
+        height: 180px;
+      }
     }
   }
 }
