@@ -407,8 +407,8 @@ h2::after {
   background-size: 100%;
   width: 100%;
   background-repeat: no-repeat;
-  -webkit-animation: slide 10s infinite;
-          animation: slide 10s infinite;
+  -webkit-animation: slide 5s infinite;
+          animation: slide 5s infinite;
 }
 
 .project .project-container .project-2 {
@@ -418,8 +418,8 @@ h2::after {
   background-size: 100%;
   width: 100%;
   background-repeat: no-repeat;
-  -webkit-animation: project2 10s infinite;
-          animation: project2 10s infinite;
+  -webkit-animation: project2 5s infinite;
+          animation: project2 5s infinite;
 }
 
 @-webkit-keyframes slide {
@@ -623,7 +623,7 @@ h2::after {
 }
 
 .hero {
-  background: url(../media/photos/IMG_20210514_220522_852.jpg);
+  background: url(../media/photos/jj.jpg);
   background-size: cover;
   height: 100vh;
   background-attachment: fixed;
